@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/rhodes-gate/static/css/main.4a667120.css",
-    "main.js": "/rhodes-gate/static/js/main.5a2d4557.js",
+    "main.js": "/rhodes-gate/static/js/main.d392f208.js",
     "static/js/787.54a81ea3.chunk.js": "/rhodes-gate/static/js/787.54a81ea3.chunk.js",
     "static/media/logo4.png": "/rhodes-gate/static/media/logo4.3b0a6c7a3d177e73b6cf.png",
     "static/media/logo.svg": "/rhodes-gate/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/rhodes-gate/index.html",
     "main.4a667120.css.map": "/rhodes-gate/static/css/main.4a667120.css.map",
-    "main.5a2d4557.js.map": "/rhodes-gate/static/js/main.5a2d4557.js.map",
+    "main.d392f208.js.map": "/rhodes-gate/static/js/main.d392f208.js.map",
     "787.54a81ea3.chunk.js.map": "/rhodes-gate/static/js/787.54a81ea3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a667120.css",
-    "static/js/main.5a2d4557.js"
+    "static/js/main.d392f208.js"
   ]
 }
