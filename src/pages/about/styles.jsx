@@ -12,8 +12,8 @@ export const AboutCtn = styled.div`
   width: 100vw;
   padding-bottom: 2rem;
   //   height: 100vh;
-  height: 90vh;
-  overflow: scroll;
+  // height: 90vh;
+  // overflow: scroll;
 
   display: flex;
   flex-direction: column;
@@ -21,9 +21,9 @@ export const AboutCtn = styled.div`
   align-items: center;
 
   .about-ctn {
-    padding: 10rem 10rem 0 10rem;
+    padding: 5rem 10rem 5rem 10rem;
     width: 80%;
-    height: 30rem;
+    // height: 30rem;
     background: #f5f5f5;
     border: 1px solid grey;
     border-radius: 1rem;

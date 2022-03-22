@@ -29,8 +29,14 @@ const AboutPage = () => {
         </div>
         <div className="desc">
           Rhode’s Gate is a launchpad company that specializes in the release of
-          non-fungible token projects in the crypto space. We provide the expertise and guidance our
-          costumers need to execute quality projects. With a small team, we are able to provide  
+          non-fungible token projects in the crypto space. We here at Rhode’s
+          Gate utilize our launching expertise to craft projects from ideation
+          to final product with efficiency and blockchain preference
+          flexibility. We prefer to deliver quality and personalization over
+          quantity and standardization. We are here for you every step of the
+          way; care and attention is something you rarely see in launchpads, and
+          our mission is to change that. If you have a project in ideation that
+          you wish to execute, you have come to the right place!
         </div>
         <Button
           onClick={() => navigate("/contact")}
