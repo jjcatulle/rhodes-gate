@@ -70,6 +70,7 @@ function MediaControlCard({
 const Upcoming = () => {
   return (
     <UpcomingCtn name="upcoming">
+      
       <div className="header">
         <span>Upcoming</span> Drops
       </div>
