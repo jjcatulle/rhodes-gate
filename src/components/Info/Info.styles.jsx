@@ -2,27 +2,30 @@ import styled from "styled-components";
 
 export const InfoCtn = styled.div`
   // max-width: 90rem;
+  
   width: 100vw;
 
   display: flex;
   flex-direction: column;
-  min-height: 50rem;
+  // min-height: 50rem;
   padding: 0 5rem;
   padding-top: 10rem;
-  //   background: linear-gradient(to left bottom, #dd1155 20%, #fff 20%, #dd1155 20%);
+  //   background: linear-gradient(to left bottom, #ee6d37 20%, #fff 20%, #ee6d37 20%);
 
   .header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align:right;
+    text-align: right;
 
     .title {
       width: 100%;
       font-weight: bold;
       font-size: 3rem;
+      font-family: "Orbitron", sans-serif;
+
       span {
-        color: #dd1155;
+        color: #ee6d37;
       }
     }
 
@@ -42,7 +45,7 @@ export const InfoCtn = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    padding:0rem;
+    padding: 0rem;
     padding-top: 3rem;
 
     .header {
@@ -68,9 +71,9 @@ export const InfoItem = styled.div`
   padding-right: 2rem;
   margin-bottom: 1rem;
   .icon {
-    color: #dd1155;
+    color: #ee6d37;
     font-size: 1.1rem;
-    border: 0.12rem solid #dd1155;
+    border: 0.12rem solid #ee6d37;
     width: 2.2rem;
     height: 2.2rem;
     display: flex;

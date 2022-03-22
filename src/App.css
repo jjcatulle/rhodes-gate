@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 
 body {
   font-family: 'Castoro', serif;
   padding: 0px 0px;
   margin: 0px 0px;
+  color:#000;
 }
 
 * {
@@ -12,4 +14,4 @@ body {
 ::-webkit-scrollbar {
   width: 1px;
   display: none;
-}
+} */

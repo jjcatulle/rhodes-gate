@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const PreviousCtn = styled.div`
+  margin-top: 5rem;
   padding: 0 5rem;
   width: 100vw;
   // background:red;
@@ -12,12 +13,18 @@ export const PreviousCtn = styled.div`
     padding-top: 2rem;
     font-size: 2rem;
     font-weight: 700;
+    font-family: "Orbitron", sans-serif;
 
     span {
-      color: #dd1155;
+      color: #ee6d37;
     }
   }
   .body {
     padding-top: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 0rem;
+    padding: 0 2rem;
   }
 `;

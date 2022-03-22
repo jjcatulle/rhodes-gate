@@ -1,70 +1,38 @@
 import React from "react";
+import {
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTiktok,
+  faDiscord
+} from "@fortawesome/free-brands-svg-icons";
 
-import { Box, Container, Row, Column, FooterLink, Heading } from "./styles";
+import { Box } from "./styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
     <Box>
-      <h1 style={{ color: "#dd1155", textAlign: "center", marginTop: "-50px" }}>
+      <h1 style={{ color: "#ee6d37", textAlign: "center" }}>
         Rhodes Gate: A Launchpad for everyone
       </h1>
-      <Container>
-        <Row>
-          <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Advicing</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">help@rhodesgate.com</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
-        {/* <Row> */}
-        <div
-          style={{
-            color: "#eee",
-            textAlign: "center",
-            width: "100%",
-            // background: "red",
-            margin: "auto",
-            paddingTop:'5rem'
-          }}
+
+      <div className="btn">
+        <a
+          href="https://twitter.com/RhodesGate"
+          target="_blank"
+          rel="noreferrer"
         >
-          All Rights Reserved- &copy; 2022 Rhodes Gates
-        </div>
-        {/* </Row> */}
-      </Container>
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+        {/* <a href="/" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faDiscord} />
+        </a> */}
+      </div>
+      <div className="trademark">
+        2022 - &copy; Rhode's Gate - All Rights Reserved
+      </div>
     </Box>
   );
 };

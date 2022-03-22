@@ -5,16 +5,27 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { height } from "@mui/system";
 
-const myImage =
-  "https://oci.mypinata.cloud/ipfs/QmPBNhpXDssjrJwq3QqWYwVLewyHBoocxa63e2AjLJdbfP/2.png";
+import { useNavigate } from "react-router-dom";
+import { myItem } from "../data/constant";
+
+
+// [Math.floor(Math.random()*myData.length)]
 
 export default function ActionAreaCard({
-  title = "Imx Rovers",
-  subtitle = "by orignal cosmic 2022",
-  image = "https://oci.mypinata.cloud/ipfs/QmPBNhpXDssjrJwq3QqWYwVLewyHBoocxa63e2AjLJdbfP/2.png",
+  id=myItem.id,
+  title = myItem.title,
+  subtitle = myItem.date,
+  image = myItem.image
 }) {
+  const navigate = useNavigate();
+  const handleClick = () => navigate("/projects/"+id);
+
   return (
-    <Card className="card">
+    <Card
+      className="card"
+      onClick={handleClick}
+      style={{ borderRadius: ".7rem", }}
+    >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -23,10 +34,24 @@ export default function ActionAreaCard({
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            style={{
+              "font-family": `"Ubuntu", sans-serif`,
+            }}
+          >
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            style={{
+              borderRadius: "2rem",
+              "font-family": `"Ubuntu", sans-serif`,
+            }}
+          >
             {subtitle}
           </Typography>
         </CardContent>

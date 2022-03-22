@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TeamCtn = styled.div`
-margin-top:10rem;
+  margin-top: 10rem;
   // max-width: 90rem;
   width: 100vw;
 
@@ -23,8 +23,10 @@ margin-top:10rem;
       width: 100%;
       font-weight: bold;
       font-size: 3rem;
+      font-family: "Orbitron", sans-serif;
+
       span {
-        color: #dd1155;
+        color: #ee6d37;
       }
     }
 
@@ -73,7 +75,7 @@ export const TeamItem = styled.div`
     padding-top: 0.5rem;
   }
   .position {
-    color: #dd1155;
+    color: #ee6d37;
     padding-top: 0.2rem;
     font-weight: 500;
   }

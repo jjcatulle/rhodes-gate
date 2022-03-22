@@ -15,14 +15,21 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/logo4.png";
 import Button from "@mui/material/Button";
+
+import { matchPath, useLocation } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 
 const pages = ["Home", "Upcoming", "Past", "About", "Contact"];
 
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+
+  const navigate = useNavigate();
+  let location = useLocation();
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -83,13 +90,33 @@ export default function PrimarySearchAppBar() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {pages.map((page) => (
-        <MenuItem>
-          <Button size="large" aria-label="show 4 new mails" color="inherit">
-            {page}
-          </Button>
-        </MenuItem>
-      ))}
+      {pages
+        .filter((i) =>
+          location.pathname == "/" ? i.toUpperCase() != "HOME" : i
+        )
+        .filter((i) =>
+          location.pathname != "/"
+            ? i.toUpperCase() != "UPCOMING" && i.toUpperCase() != "PAST"
+            : i
+        )
+        .map((page) => (
+          <MenuItem>
+            <Button
+              size="large"
+              aria-label="show 4 new mails"
+              color="inherit"
+              onClick={() =>
+                page.toUpperCase() == "CONTACT" || page.toUpperCase() == "ABOUT"
+                  ? navigate("/" + page.toLowerCase())
+                  : page.toUpperCase() == "HOME"
+                  ? navigate("/")
+                  : null
+              }
+            >
+              {page}
+            </Button>
+          </MenuItem>
+        ))}
     </Menu>
   );
 
@@ -100,31 +127,54 @@ export default function PrimarySearchAppBar() {
         style={{
           background: "#eee",
           color: "black",
-          fontFamily: `'Castoro', serif`,
+          position: "fixed",
         }}
       >
         <Toolbar>
-          <Typography
+          <Button
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: "block", sm: "block" } }}
+            onClick={() => navigate("/")}
+            // style={{ "font-family": `"Orbitron", sans-serif`, fontSize:'1.2rem' }}
           >
-            <img style={{ height: "2rem" }} src={Logo} /> Rhodes Gate
-          </Typography>
+            <img style={{ height: "2rem" }} src={Logo} />
+          </Button>
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={() => {}}
-                sx={{ my: 2, color: "white", display: "block" }}
-                style={{ color: "black" }}
-              >
-                {page}
-              </Button>
-            ))}
+            {pages
+              .filter((i) =>
+                location.pathname == "/" ? i.toUpperCase() != "HOME" : i
+              )
+              .filter((i) =>
+                location.pathname != "/"
+                  ? i.toUpperCase() != "UPCOMING" && i.toUpperCase() != "PAST"
+                  : i
+              )
+              .map((page) => (
+                <Button
+                  key={page}
+                  // onClick={() => {}}
+                  onClick={() =>
+                    page.toUpperCase() == "CONTACT" ||
+                    page.toUpperCase() == "ABOUT"
+                      ? navigate("/" + page.toLowerCase())
+                      : page.toUpperCase() == "HOME"
+                      ? navigate("/")
+                      : null
+                  }
+                  sx={{ my: 2, color: "white", display: "block" }}
+                  style={{
+                    color: "black",
+                    fontWeight: "550",
+                    "font-family": `"Orbitron", sans-serif`,
+                  }}
+                >
+                  {page}
+                </Button>
+              ))}
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { UpcomingCtn } from "./styles";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import { v4 as uuidv4 } from "uuid";
+
 import ActionAreaCard from "../card";
 
 import { useTheme } from "@mui/material/styles";
@@ -13,16 +14,29 @@ import Typography from "@mui/material/Typography";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
+import { useNavigate } from "react-router-dom";
+
+import myData from "../../data/projects.json";
+
+import { UpcomingCtn } from "./styles";
 
 function MediaControlCard({
+  id = 1,
   title = "Imx Rovers",
   subtitle = "by orignal cosmic 2022",
   image = "https://oci.mypinata.cloud/ipfs/QmPBNhpXDssjrJwq3QqWYwVLewyHBoocxa63e2AjLJdbfP/2.png",
+  description = "lol tesstttsts",
 }) {
   const theme = useTheme();
+  const navigate = useNavigate();
+  const handleClick = () => navigate("/projects/" + id);
 
   return (
-    <Card sx={{ display: "flex" }}>
+    <Card
+      sx={{ display: "flex" }}
+      style={{ borderRadius: ".7rem", cursor: "pointer" }}
+      onClick={handleClick}
+    >
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography component="div" variant="h5">
@@ -32,43 +46,26 @@ function MediaControlCard({
             variant="subtitle1"
             color="text.secondary"
             component="div"
+            style={{
+              color: "#ee6d37",
+            }}
           >
-            05/20/2022
+            {subtitle}
           </Typography>
         </CardContent>
         <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
-        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit.sint aspernatur repudiandae vero rem cum?</div>
+          <div className="des">{description.substring(0, 120)}...</div>
         </Box>
       </Box>
       <CardMedia
         component="img"
         sx={{ width: 151 }}
         image={image}
-        alt="Live from space album cover"
+        alt="profile image"
       />
     </Card>
   );
 }
-
-const dataArray = [
-  {
-    title: "Icey Pandaz",
-    subtitle: "a collaction of 2500 pandaz",
-    image:
-      "https://pbs.twimg.com/profile_images/1480958922332770306/SnCcyVrP_400x400.jpg",
-  },
-  {
-    title: "Imx Rovers",
-    subtitle: "by Original Cosmic 2022",
-    image: "https://pbs.twimg.com/media/FMzB0oAXoAUx4t6?format=jpg&name=medium",
-  },
-  {
-    title: "Luxe Ladies",
-    subtitle: "by Cataldo Company,inc",
-    image:
-      "https://pbs.twimg.com/profile_images/1495072669410209803/Sfwu_TS5_400x400.jpg",
-  },
-];
 
 const Upcoming = () => {
   return (
@@ -83,15 +80,19 @@ const Upcoming = () => {
             spacing={{ xs: 2, md: 3 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
-            {dataArray.map((item, index) => (
-              <Grid item xs={4} sm={4} md={4} key={index}>
-                <MediaControlCard
-                  title={item.title}
-                  subtitle={item.subtitle}
-                  image={item.image}
-                />
-              </Grid>
-            ))}
+            {myData
+              .filter((i) => i.date.toUpperCase() == "TBA")
+              .map((item, index) => (
+                <Grid item xs={4} sm={4} md={4} key={uuidv4()}>
+                  <MediaControlCard
+                    id={item.id}
+                    title={item.title}
+                    subtitle={item.date}
+                    image={item.image}
+                    description={item.description}
+                  />
+                </Grid>
+              ))}
           </Grid>
         </Box>
       </div>

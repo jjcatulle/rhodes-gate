@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { myItem } from "../../data/constant";
 
-const myImage =
-  "https://oci.mypinata.cloud/ipfs/QmPBNhpXDssjrJwq3QqWYwVLewyHBoocxa63e2AjLJdbfP/2.png";
+const myImage =myItem.image
 
 export const LandingCtn = styled.div`
+  margin-top: 2rem;
   padding: 0 5rem;
   width: 100vw;
   height: 45rem;
@@ -14,6 +15,7 @@ export const LandingCtn = styled.div`
       rgba(255, 255, 255, 1)
     ),
     url("${myImage}");
+  background-size: cover;
 
   display: flex;
 
@@ -28,6 +30,7 @@ export const LandingCtn = styled.div`
 
       h2 {
         font-size: 3rem;
+        font-family: "Orbitron", sans-serif;
       }
       .disc {
         font-size: 2rem;
@@ -35,7 +38,9 @@ export const LandingCtn = styled.div`
 
       .btn {
         margin-top: 1rem;
-        background: #dd1155;
+        background: #ee6d37;
+        border-radius: 0.7rem;
+        font-family: "Ubuntu", sans-serif;
       }
     }
   }
@@ -52,6 +57,13 @@ export const LandingCtn = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 1)
+      ),
+      url("${myImage}");
+
     flex-direction: column;
     padding: 0 0rem;
 
@@ -73,7 +85,7 @@ export const LandingCtn = styled.div`
 
         .btn {
           margin-top: 1rem;
-          background: #dd1155;
+          background: #ee6d37;
         }
       }
     }
