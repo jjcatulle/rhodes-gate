@@ -1,7 +1,6 @@
 {
   "name": "rhodes-gate",
   "version": "0.1.0",
-  "homepage": "https://jjcatulle.github.io/rhodes-gate",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -19,6 +18,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.6",
     "styled-components": "^5.3.3",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"

@@ -23,7 +23,7 @@ export const PreviousCtn = styled.div`
     padding-top: 2rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1200px) {
     margin-top: 0rem;
     padding: 0 2rem;
   }

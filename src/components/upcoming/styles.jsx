@@ -27,11 +27,11 @@ export const UpcomingCtn = styled.div`
   .des {
     color: #73729a;
     // font-weight: 450;
-    font-size: .91rem;
-    line-height:1.5rem;
+    font-size: 0.91rem;
+    line-height: 1.5rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1200px) {
     padding: 0 1rem;
   }
 `;

@@ -7,7 +7,7 @@ export const TeamCtn = styled.div`
 
   display: flex;
   flex-direction: column;
-  min-height: 30rem;
+  // min-height: 30rem;
   padding: 0 5rem;
   // background: linear-gradient(to right bottom, #fff 80%, #7b46ff);
   // background:red;
@@ -45,10 +45,11 @@ export const TeamCtn = styled.div`
     padding: 5rem 15rem 0 15rem;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1200px) {
     padding-top: 3rem;
 
     .header {
+      // background:red;
       .title {
         font-size: 1.5rem;
       }

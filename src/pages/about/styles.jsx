@@ -107,11 +107,12 @@ export const AboutCtn = styled.div`
     color: #73729a;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1200px) {
     padding: 0 1rem;
 
     .about-ctn {
-      padding: 5rem 1rem 0 1rem;
+      padding: 5rem 1rem 0.5rem 1rem;
+      width: 99%;
 
       .title {
         font-size: 1.5rem;

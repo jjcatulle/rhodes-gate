@@ -15,8 +15,8 @@ export const ProjectPageCtn = styled.div`
   // flex:2;
 
   width: 100vw;
-  height: 90vh;
-  overflow:scroll;
+  // height: 90vh;
+  // overflow:scroll;
 
   display: flex;
 
@@ -62,9 +62,10 @@ export const ProjectPageCtn = styled.div`
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1200px) {
     padding: 0 1rem;
     padding-bottom: 10rem;
+    padding-top: 1rem;
 
     flex-direction: column;
 

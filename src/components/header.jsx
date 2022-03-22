@@ -22,7 +22,11 @@ import { matchPath, useLocation } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
 
-const pages = ["Home", "Upcoming", "Past", "About", "Contact"];
+const pages = ["Home",
+//  "Upcoming", 
+//  "Past", 
+ "About", 
+ "Contact"];
 
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -105,13 +109,16 @@ export default function PrimarySearchAppBar() {
               size="large"
               aria-label="show 4 new mails"
               color="inherit"
-              onClick={() =>
-                page.toUpperCase() == "CONTACT" || page.toUpperCase() == "ABOUT"
-                  ? navigate("/" + page.toLowerCase())
-                  : page.toUpperCase() == "HOME"
-                  ? navigate("/")
-                  : null
-              }
+              onClick={() => {
+                if (
+                  page.toUpperCase() == "CONTACT" ||
+                  page.toUpperCase() == "ABOUT"
+                ) {
+                  navigate("/" + page.toLowerCase());
+                } else if (page.toUpperCase() == "HOME") {
+                  navigate("/");
+                }
+              }}
             >
               {page}
             </Button>
@@ -156,15 +163,16 @@ export default function PrimarySearchAppBar() {
               .map((page) => (
                 <Button
                   key={page}
-                  // onClick={() => {}}
-                  onClick={() =>
-                    page.toUpperCase() == "CONTACT" ||
-                    page.toUpperCase() == "ABOUT"
-                      ? navigate("/" + page.toLowerCase())
-                      : page.toUpperCase() == "HOME"
-                      ? navigate("/")
-                      : null
-                  }
+                  onClick={() => {
+                    if (
+                      page.toUpperCase() == "CONTACT" ||
+                      page.toUpperCase() == "ABOUT"
+                    ) {
+                      navigate("/" + page.toLowerCase());
+                    } else if (page.toUpperCase() == "HOME") {
+                      navigate("/");
+                    } 
+                  }}
                   sx={{ my: 2, color: "white", display: "block" }}
                   style={{
                     color: "black",

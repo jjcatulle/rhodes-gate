@@ -9,7 +9,7 @@ import myData from "../../data/projects.json";
 
 const PreviousDrop = () => {
   return (
-    <PreviousCtn>
+    <PreviousCtn name="past">
       <div className="header">
         <span>Previous</span> Drops
       </div>

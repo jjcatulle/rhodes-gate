@@ -11,9 +11,10 @@ export const ContactPageCtn = styled.div`
   // margin-top: 5rem;
   display: flex;
   justify-content: center;
-  height: 90vh;
-  overflow: scroll;
+  // height: 90vh;
+  // overflow: scroll;
   .card {
+    min-height: 30rem;
     margin: auto;
     width: 30rem;
     margin: 5rem;
@@ -41,9 +42,15 @@ export const ContactPageCtn = styled.div`
     border-radius: 0.7rem;
     font-family: "Ubuntu", sans-serif;
   }
+
+  @media screen and (max-width: 1200px) {
+    .card{
+      width:80vw;
+    }
+  }
 `;
 
 export const Spacer = styled.div`
   width: 100%;
-  height: .6rem;
+  height: 0.6rem;
 `;

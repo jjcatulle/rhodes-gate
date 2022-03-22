@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { myItem } from "../../data/constant";
 
-const myImage =myItem.image
+const myImage = myItem.image;
 
 export const LandingCtn = styled.div`
   margin-top: 2rem;
   padding: 0 5rem;
   width: 100vw;
-  height: 45rem;
+  min-height: 45rem;
+  // padding-top:5rem;
+  // min
   // background:red;
   background-image: linear-gradient(
       to bottom,
@@ -56,7 +58,7 @@ export const LandingCtn = styled.div`
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1200px) {
     background-image: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0.85),
@@ -78,6 +80,7 @@ export const LandingCtn = styled.div`
 
         h2 {
           font-size: 2rem;
+          padding-top: 1rem;
         }
         .disc {
           font-size: 1.3rem;
