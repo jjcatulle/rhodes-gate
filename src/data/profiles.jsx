@@ -43,7 +43,7 @@ export const Profiles = [
     name: "Alvin Lim",
     title: "community managers",
     bio: "known by his friends as Machi, Alvin is Singaporean. He previously worked as a graphic designer.",
-    pfp: require("../assets/pfp/profile.jpg"),
+    pfp: require("../assets/pfp/matchi.png"),
     social: {
       facebook: "",
       instagram: "",
