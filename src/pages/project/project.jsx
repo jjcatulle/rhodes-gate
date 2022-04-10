@@ -127,33 +127,42 @@ const ProjectPage = () => {
 
           <div className="label">Links</div>
           <div className="links">
-            <IconButton
-            onClick={()=>window.location.href=`${currentItem.website}`}
-              variant="text"
-              style={{
-                color: "grey",
-              }}
-            >
-              <FaGlobe />
-            </IconButton>
-            <IconButton
-            onClick={()=>window.location.href=`${currentItem.twitter}`}
-              variant="text"
-              style={{
-                color: "#1DA1F2",
-              }}
-            >
-              <FaTwitter />
-            </IconButton>
-            <IconButton
-            onClick={()=>window.location.href=`${currentItem.discord}`}
-              variant="text"
-              style={{
-                color: "#5865F2",
-              }}
-            >
-              <FaDiscord />
-            </IconButton>
+            {currentItem.website.length > 0 &&
+              <IconButton
+              onClick={()=>window.location.href=`${currentItem.website}`}
+                variant="text"
+                style={{
+                  color: "grey",
+                }}
+                formtarget="_blank"
+              >
+                <FaGlobe />
+              </IconButton>
+            }
+            {currentItem.twitter.length > 0 &&
+              <IconButton
+              onClick={()=>window.location.href=`${currentItem.twitter}`}
+                variant="text"
+                style={{
+                  color: "#1DA1F2",
+                }}
+                formtarget="_blank"
+              >
+                <FaTwitter />
+              </IconButton>
+            }
+            {currentItem.discord.length > 0 &&
+              <IconButton
+              onClick={()=>window.location.href=`${currentItem.discord}`}
+                variant="text"
+                style={{
+                  color: "#5865F2",
+                }}
+                formtarget="_blank"
+              >
+                <FaDiscord />
+              </IconButton>
+            }
           </div>
         </div>
       </div>
