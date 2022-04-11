@@ -1,6 +1,17 @@
 [
   {
     "id": 1,
+    "title": "ICEY PANDAZ",
+    "image": "https://media.discordapp.net/attachments/937537796095229962/955362823423287296/Icey_Pandaz_Logo_1.png",
+    "description": "ICEY PANDAZ is a Private Alpha/ Rewards community.Benefiting long term holders of the private Airdrop set with free NFTs, Sets, Tokens, and Alpha.",
+    "date": "1/1/2022",
+    "Team": ["Fish", "OG", "JC"],
+    "discord": "",
+    "twitter": "",
+    "website": "https://geekpandaz.xyz/"
+  },
+  {
+    "id": 2,
     "title": "Imx Rovers",
     "image": "https://oci.mypinata.cloud/ipfs/QmPBNhpXDssjrJwq3QqWYwVLewyHBoocxa63e2AjLJdbfP/2.png",
     "description": "Embark in a fun first, scifi, blockchain powered MMO with earning mechanics. Take control of your rover and explore Mars and its treasures.",
@@ -42,13 +53,13 @@
   },
   {
     "id": 5,
-    "title": "ICEY PANDAZ",
-    "image": "https://media.discordapp.net/attachments/937537796095229962/955362823423287296/Icey_Pandaz_Logo_1.png",
-    "description": "ICEY PANDAZ is a Private Alpha/ Rewards community.Benefiting long term holders of the private Airdrop set with free NFTs, Sets, Tokens, and Alpha.",
-    "date": "1/1/2022",
-    "Team": ["Fish", "OG", "JC"],
-    "discord": "",
-    "twitter": "",
-    "website": "https://geekpandaz.xyz/"
+    "title": "Strange Creatures",
+    "image": "https://strange-creatures.io/android-chrome-512x512.png",
+    "description": "Luxe Ladies NFT Collection is a woman-led NFT project that brings awareness to empowering women of all ages and nationalities. So, what makes up the core of a Luxe Lady? Luxe Ladies are like superheroes; strong and independent, they are always willing to tackle daily issues with determination. They are hidden in plain sight as mothers, wives, sisters, friends, and daughters. Luxe Ladies are strong women who empower other women to raise and influence kind and caring sons, husbands, and fathers. The only question is, which Luxe Lady can you see yourself as?",
+    "date": "04/02/2022",
+    "Team": [],
+    "discord": "https://t.co/E1e7ZSSJw0",
+    "twitter": "https://twitter.com/GameCreatures",
+    "website": "https://strange-creatures.io/home"
   }
 ]
