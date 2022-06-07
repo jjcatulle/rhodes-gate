@@ -2,64 +2,50 @@
   {
     "id": 1,
     "title": "ICEY PANDAZ",
-    "image": "https://media.discordapp.net/attachments/937537796095229962/955362823423287296/Icey_Pandaz_Logo_1.png",
+    "image": "projects/icey-pandaz.png",
     "description": "ICEY PANDAZ is a Private Alpha/ Rewards community.Benefiting long term holders of the private Airdrop set with free NFTs, Sets, Tokens, and Alpha.",
     "date": "1/1/2022",
     "Team": ["Fish", "OG", "JC"],
     "discord": "",
     "twitter": "",
-    "website": "https://geekpandaz.xyz/"
+    "website": "https://geekpandaz.xyz/",
+    "upcoming": "No"
   },
   {
     "id": 2,
     "title": "Imx Rovers",
-    "image": "https://oci.mypinata.cloud/ipfs/QmPBNhpXDssjrJwq3QqWYwVLewyHBoocxa63e2AjLJdbfP/2.png",
+    "image": "projects/imx-rovers.png",
     "description": "Embark in a fun first, scifi, blockchain powered MMO with earning mechanics. Take control of your rover and explore Mars and its treasures.",
     "date": "03/10/2022",
     "status": "released",
     "team": [],
     "website":"https://imxrovers.club/",
     "discord": "https://discord.gg/BSKxT6XMXs",
-    "twitter": "https://twitter.com/ImxRovers"
+    "twitter": "https://twitter.com/ImxRovers",
+    "upcoming": "No"
   },
   {
     "id": 3,
-    "title": "The NFT ToonVerse",
-    "image": "https://cdn.discordapp.com/attachments/895050963377848361/962906406544085042/IMG_0073.png",
-    "description": "The NFT ToonVerse is an evolving family of NFT collections , all meticulously crafted by seasoned Boston based artist and cartoonist Keith Miller. The collections will evolve into an overarching story destined for syndication! Every toon NFT is unique in both aesthetics and personality ! Our designs are a sweet cartoon cocktail of various eras and styles , ranging from the classic 'rubber hose' style of the early 1900s to the loud vibrant colors of the 80s and new school graffiti of the 90s and now … and everything in between!",
-    "date": "TBA",
-    "status": "released",
-    "team": [
-      {
-        "name":"Keith",
-        "role":"creator/artist",
-        "twitter":""
-      }
-    ],
-    "website":"https://toonverse.netlify.app/",
-    "discord": "https://discord.gg/Wcha8yFdJy",
-    "twitter": "https://twitter.com/NftToonverse"
-  },
-  {
-    "id": 4,
     "title": "Luxe Ladies",
-    "image": "https://media.discordapp.net/attachments/944631850125627402/944797979636801566/png_20220219_112650_0000.png?width=609&height=609",
+    "image": "projects/luxe-ladies.png",
     "description": "Luxe Ladies NFT Collection is a woman-led NFT project that brings awareness to empowering women of all ages and nationalities. So, what makes up the core of a Luxe Lady? Luxe Ladies are like superheroes; strong and independent, they are always willing to tackle daily issues with determination. They are hidden in plain sight as mothers, wives, sisters, friends, and daughters. Luxe Ladies are strong women who empower other women to raise and influence kind and caring sons, husbands, and fathers. The only question is, which Luxe Lady can you see yourself as?",
     "date": "04/15/2022",
     "Team": ["Brenda Cataldo, Mickey Cataldo"],
     "discord": "https://discord.gg/W7r4ZqYjMr",
     "twitter": "https://twitter.com/BrenCataldo",
-    "website": "https://www.luxeladiesnft.com/"
+    "website": "https://www.luxeladiesnft.com/",
+    "upcoming": "No"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Strange Creatures",
-    "image": "https://cdn.discordapp.com/attachments/895050963377848361/941050679231938570/L-yPo6wD_400x400.jpg",
+    "image": "projects/strange-creatures.png",
     "description": "Embark on a Unique Twist on P2E on AVAX. Where Humans pay with their $BLOOD to cohabit with Vampires.",
     "date": "04/02/2022",
     "Team": [],
     "discord": "https://t.co/E1e7ZSSJw0",
     "twitter": "https://twitter.com/GameCreatures",
-    "website": "https://strange-creatures.io/home"
+    "website": "https://strange-creatures.io/home",
+    "upcoming": "No"
   }
 ]

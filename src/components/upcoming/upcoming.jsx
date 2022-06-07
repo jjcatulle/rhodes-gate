@@ -82,7 +82,7 @@ const Upcoming = () => {
             columns={{ xs: 4, sm: 8, md: 12 }}
           >
             {myData
-              .filter((i) => i.date.toUpperCase() === "TBA" || i.date === "04/15/2022")
+              .filter((i) => i.upcoming === "Yes")
               .map((item, index) => (
                 <Grid item xs={4} sm={4} md={4} key={uuidv4()}>
                   <MediaControlCard
