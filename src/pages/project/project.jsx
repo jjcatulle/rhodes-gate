@@ -32,7 +32,7 @@ function ActionAreaCard({
           component="img"
           // height="500"
           image={image}
-          alt="green iguana"
+          alt={title}
         />
       </CardActionArea>
     </Card>
